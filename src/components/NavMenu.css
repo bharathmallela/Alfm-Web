@@ -1,0 +1,58 @@
+*{
+    font-family: 'Montserrat', Courier, monospace;
+}
+.menu-bar{
+    position: sticky;
+}
+
+
+.Logo{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.bg-pri{
+    background-color: black;
+
+}
+.bg-sec{
+    background-color: red;
+
+}
+
+
+
+.Cart{
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    right: 40%;
+    cursor: pointer;
+
+}
+.Cart:hover,.Cart>span:hover{
+    color: beige;
+
+}
+.Cart>span{
+    font-size: .8rem;
+    padding: 2px;
+    position:relative;
+    top:-15px;
+    right: 0px;
+    background-color:red;
+    border-radius: 1.5rem;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 963px) {
+    .Cart{
+        font-size: 1rem;
+        position: absolute;
+        top: 15px;
+        right: 25%;
+        transform: translate(60%, 15%);
+    }
+
+    
+  }
+  

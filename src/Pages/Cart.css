@@ -1,0 +1,245 @@
+.no-item{
+    background-color: gray;
+    min-height: 81vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-item>h1{
+    color: rgba(238, 232, 232, 0.459);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+
+
+
+.cart-container{
+    background-color: gray;
+    min-height: 100vh;
+}
+
+.cart-details{
+    display: flex;
+}
+
+.cart-products{
+    flex: 3;
+    padding: 10px;
+    
+}
+.cart-price{
+    flex: 1;
+    
+}
+.product-template{
+    display: flex;
+    background-color: rgba(20, 19, 20, 0.479);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-template>div{
+    padding: 1rem;
+}
+
+.template-data{
+    align-self: center;
+}
+
+.template-name{
+    margin-bottom: 2rem;
+}
+.template-name>p{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+
+}
+.template-name>h3{
+    font-weight: 600;
+    color: white;
+
+}
+.template-price>p{
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;    
+
+}
+.dynamic-product{
+    display: flex;
+}
+.dynamic-product>h2{
+    font-weight: 600;
+    color: white;
+
+}
+.dynamic-product>p{
+    font-weight: 600;
+    color: white;
+
+}
+
+.template-img>img{
+    border-radius: 0.5rem;
+    background-color: rgba(20, 19, 20, 0.479);
+}
+
+
+.cart-button{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.5);
+    position: absolute;
+    right:400px;
+}
+.cart-button>h1{
+    margin-bottom: 0;
+}
+.decrement{
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255); 
+    color: black; 
+    border: none;
+   
+    
+}
+
+.increment{
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black;
+    border: none; 
+    
+}
+
+.decrement:hover {
+    background-color: rgba(112, 0, 0, 0.384); 
+    
+}
+.increment:hover{
+    
+    background-color: rgba(0, 95, 13, 0.582); 
+
+}
+
+.cart-price{
+    padding: 10px;
+
+
+}
+.template-items{
+    display: flex;
+    padding: 10px 10px 0px 10px;
+    align-items: baseline;
+}
+
+.template-items>h4{
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.template-total{
+    background-color: rgba(20, 19, 20, 0.479);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.template-total>div{
+    display: flex;
+}
+.template-total>div>p{
+    color: white;
+    font-weight: 600;
+}
+.template-total>div>h4{
+    margin-left: auto;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 400;
+}
+.template-total>div>h5{
+    margin-left: auto;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+.template-checkout{
+    margin-top: 1rem;
+    display: flex;
+}
+.template-checkout>button{
+    margin-left: auto;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black;
+    border: none; 
+    border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 963px) {
+    .cart-details{
+        flex-direction: column;
+    }
+    
+    .cart-products{
+        width: 100%;
+        
+    }
+    .cart-price{
+        width: 100%;
+        
+    }
+    .cart-button{
+        position: relative;
+        top: 10rem;
+        right: -2rem;
+        width: 9rem;
+        transform: scale(0.5);
+    }
+ 
+}
+@media only screen and (max-width: 600px) {
+    .product-template{
+        flex-direction: column;
+    }
+    .template-img{
+        width: 100%;
+    }
+
+    .cart-button{
+        width: 9rem;
+        top: 0;
+        right: -7rem;
+    }
+
+ 
+}
