@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Alfm-Web/static/css/main.18ac322d.chunk.css",
+    "main.js": "/Alfm-Web/static/js/main.ec30db83.chunk.js",
+    "main.js.map": "/Alfm-Web/static/js/main.ec30db83.chunk.js.map",
+    "runtime-main.js": "/Alfm-Web/static/js/runtime-main.bd37aec1.js",
+    "runtime-main.js.map": "/Alfm-Web/static/js/runtime-main.bd37aec1.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/Alfm-Web/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.1397bb11.chunk.js": "/Alfm-Web/static/js/2.1397bb11.chunk.js",
+    "static/js/2.1397bb11.chunk.js.map": "/Alfm-Web/static/js/2.1397bb11.chunk.js.map",
+    "index.html": "/Alfm-Web/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/Alfm-Web/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.18ac322d.chunk.css.map": "/Alfm-Web/static/css/main.18ac322d.chunk.css.map",
+    "static/js/2.1397bb11.chunk.js.LICENSE.txt": "/Alfm-Web/static/js/2.1397bb11.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd37aec1.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.1397bb11.chunk.js",
+    "static/css/main.18ac322d.chunk.css",
+    "static/js/main.ec30db83.chunk.js"
+  ]
+}
