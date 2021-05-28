@@ -12,9 +12,7 @@ import Home from './Pages/Home'
 import axios from 'axios'
 import {CartContext} from './components/CartContext'
 axios.defaults.baseURL = 'https://challengerbuildyourpc.com/api/v1/client';
-// import {createStore} from 'redux'
-// import {Provider} from 'react-redux'
-// import rootReducer from './reducers/rootReducer'
+
 
 
 

@@ -5,10 +5,8 @@ import App from './App';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import rootReducer from './reducers/rootReducer'
-// import {saveState,loadState} from './localStorage';
 
 
-// const persistedState = loadState();
 
 function saveToLocalStorage(state) {
     try {
