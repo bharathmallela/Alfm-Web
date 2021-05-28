@@ -1,5 +1,5 @@
 .no-item{
-    background-color: gray;
+    background-color: rgb(75, 74, 74);
     min-height: 81vh;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
 
 
 .cart-container{
-    background-color: gray;
+    background-color: rgb(75, 74, 74);
     min-height: 100vh;
 }
 
@@ -228,6 +228,10 @@
  
 }
 @media only screen and (max-width: 600px) {
+    .cart-details{
+        flex-direction: column-reverse;
+    }
+    
     .product-template{
         flex-direction: column;
     }
@@ -238,8 +242,32 @@
     .cart-button{
         width: 9rem;
         top: 0;
-        right: -7rem;
+        right: -15rem;
     }
+    /* style template cards*/
+    .template-name{
+        margin-bottom: 1rem;
+    }
+    .template-name>p{
+
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0px;
+    
+    }
+    .template-name>h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+    
+    }
+    .template-price>p{
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0px;    
+    
+    }
+
 
  
 }

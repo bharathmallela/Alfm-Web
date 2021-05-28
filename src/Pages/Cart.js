@@ -1,8 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import NavMenu from '../components/NavMenu'
 import './Cart.css'
-import {connect} from 'react-redux'
-// import {CartContext} from '../components/CartContext'
 import { useDispatch,useSelector} from 'react-redux'
 
 
