@@ -60,6 +60,18 @@
 
 }
 
+.Scroll-to-top{
+    display: none;
+    background-color: rgba(243, 30, 30, 0.582);
+    width: 50px;
+    height: 50px;
+    border-radius: 1.5rem;
+    position: fixed;
+    top: 90vh;
+    right: 1rem;
+    z-index: 999;
+}
+
 
 /* media query */
 @media only screen and (max-width: 1200px) {

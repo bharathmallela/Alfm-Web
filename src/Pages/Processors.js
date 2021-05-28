@@ -23,6 +23,7 @@ function Processors (props) {
         setLoading(true)
         axios.post('/product?limit=50&page=1&category=Processor')
         .then(res => {
+            setLoading(false)
             const arr = res.data.products
             setData(arr)
         })
@@ -33,7 +34,6 @@ function Processors (props) {
     },[])
 
     function low () {
-        setLoading(true)
         axios.post('/product?limit=50&page=1&category=Processor')
         .then(res => {
             const arr = res.data.products
@@ -47,7 +47,6 @@ function Processors (props) {
     }
 
     function high () {
-        setLoading(true)
         axios.post('/product?limit=50&page=1&category=Processor')
         .then(res => {
             const arr = res.data.products

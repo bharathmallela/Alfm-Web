@@ -10,6 +10,7 @@ import Ssd from './Pages/Ssd'
 import Cart from './Pages/Cart'
 import Home from './Pages/Home'
 import axios from 'axios'
+import ScrollToTop from './components/ScrollTop'
 import {CartContext} from './components/CartContext'
 axios.defaults.baseURL = 'https://challengerbuildyourpc.com/api/v1/client';
 
@@ -28,6 +29,7 @@ function App() {
     // <CartContext.Provider value={{key:1,value:2}}>
       // <Provider store={store}>  
         <Router>
+          <ScrollToTop/>
           <Switch>
               <Route path='/Processors' component={Processors} />
               <Route path='/Monitor' component={Monitor} />

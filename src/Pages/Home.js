@@ -85,6 +85,7 @@ function Home(props) {
                 
             </div>
             </div>
+            <button className='Scroll-to-top'>up</button>
 
         </div>
     )
