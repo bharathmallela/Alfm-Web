@@ -1,4 +1,4 @@
-.Card{
+ .Card{
     
     background-color: rgba(20, 19, 20, 0.479);
     width: 420px;
@@ -60,6 +60,10 @@
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
+    white-space:pre;
+    overflow:hidden;
+    text-overflow: ellipsis;
+
 
 }
 .product-price{
