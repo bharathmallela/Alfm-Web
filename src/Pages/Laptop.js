@@ -4,7 +4,7 @@ import Product from '../components/Product'
 import axios from 'axios'
 import NavMenu from '../components/NavMenu'
 import Modals from '../components/Modals'
-import {DropdownButton,Dropdown} from 'react-bootstrap';
+import {DropdownButton,Dropdown,Spinner} from 'react-bootstrap';
 import { useDispatch,useSelector} from 'react-redux'
 
 function Laptop (props) {
@@ -15,12 +15,15 @@ function Laptop (props) {
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cartState);
     console.log(cart,'from home')
+    const [Loading,setLoading] = useState(false)
 
     
   
     useEffect(() =>{
+        setLoading(true)
         axios.post('/product?limit=50&page=1&category=laptop')
         .then(res => {
+            setLoading(false)
             const arr = res.data.products
             setData(arr)
         })
@@ -74,7 +77,8 @@ function Laptop (props) {
             </div>
             </div>
             <div className='MainContent'>
-                <Product prop={Data} search={Search}  setShow={setShow} setMdata={setMdata} />
+            {Loading ? <div style={{position:'absolute', top:'50%',right:'50%' }}>
+                <Spinner animation='border'/> </div> : <Product prop={Data} search={Search}  setShow={setShow} setMdata={setMdata} />} 
             </div>
             </div>
 

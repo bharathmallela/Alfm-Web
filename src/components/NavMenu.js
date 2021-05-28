@@ -21,7 +21,7 @@ const NavMenu = (prop) => {
     return (
         <div className='menu-bar sticky-top'>
             <Navbar bg='pri'  variant='dark' expand="lg" >
-            <Navbar.Brand onClick={()=>prop.history.push('/Cart')} className='Logo offset-lg-1' style={{cursor:'pointer'}}>Challanger <i class="fas fa-desktop"/></Navbar.Brand>
+            <Navbar.Brand onClick={()=>prop.history.push('/')} className='Logo offset-lg-1' style={{cursor:'pointer'}}>Challanger <i class="fas fa-desktop"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" >
                 <Nav className="mr-auto offset-lg-6">
@@ -42,7 +42,7 @@ const NavMenu = (prop) => {
                 </Form>
                 </Nav>
             </Navbar.Collapse>
-            <a href='/Cart'className='Cart'><i className='fas fa-shopping-cart'/><span>{total}</span></a>
+            <a onClick={()=>prop.history.push('/Cart')} className='Cart'><i className='fas fa-shopping-cart'/><span>{total}</span></a>
             </Navbar>
         
             
