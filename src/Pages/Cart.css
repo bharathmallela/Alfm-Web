@@ -60,6 +60,7 @@
 
 }
 .template-name>h3{
+    font-size: 1.2rem;
     font-weight: 600;
     color: white;
 
@@ -94,7 +95,8 @@
     display: flex;
     background-color: rgb(255, 255, 255);
     transform: scale(0.5);
-    position: relative;
+    position: absolute;
+    right:400px;
 }
 .cart-button>h1{
     margin-bottom: 0;
@@ -310,6 +312,11 @@
         font-weight: 600;
         color: white;
         margin-bottom: 0px;
+    
+    }
+    .template-data{
+        align-self: flex-start;
+        width: -moz-available;
     
     }
     .template-name>h3{
