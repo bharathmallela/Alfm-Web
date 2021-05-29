@@ -47,6 +47,7 @@
 
 .template-data{
     align-self: center;
+    width: -moz-available;
 }
 
 .template-name{
@@ -93,8 +94,7 @@
     display: flex;
     background-color: rgb(255, 255, 255);
     transform: scale(0.5);
-    position: absolute;
-    right:400px;
+    position: relative;
 }
 .cart-button>h1{
     margin-bottom: 0;
@@ -199,7 +199,7 @@
     font-size: 20px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white; 
+    background-color: rgb(255, 255, 255); 
     color: black;
     border: none; 
     border-radius: 0.2rem;
@@ -227,13 +227,13 @@
     }
  
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .cart-details{
         flex-direction: column-reverse;
     }
     
     .product-template{
-        flex-direction: column;
+        flex-direction: row;
     }
     .template-img{
         width: 100%;
@@ -242,7 +242,7 @@
     .cart-button{
         width: 9rem;
         top: 0;
-        right: -13rem;
+        
     }
     /* style template cards*/
     .template-name{
@@ -256,7 +256,7 @@
     
     }
     .template-name>h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 600;
         color: white;
     
@@ -267,6 +267,90 @@
         margin-bottom: 0px;    
     
     }
+    .dynamic-product>h2{
+        font-size: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        color: rgb(255, 255, 255);
+            
+    
+    }
+    .template-img>img{
+        height: 150px;
+     
+    }
+
+
+
+ 
+}
+@media only screen and (max-width: 550px) {
+    
+    .product-template{
+        flex-direction: column;
+    }
+    .template-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cart-button{
+        width: 9rem;
+        top: 0;
+        
+    }
+    /* style template cards*/
+    .template-name{
+        margin-bottom: 1rem;
+    }
+    .template-name>p{
+
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0px;
+    
+    }
+    .template-name>h3{
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+    
+    }
+    .template-price>p{
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0px;    
+    
+    }
+    .dynamic-product>h2{
+        font-size: 1.5rem;
+        white-space:pre;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        color: rgb(255, 255, 255);
+            
+    
+    }
+    .template-img>img{
+        height: 100px;
+     
+    }
+    .no-item{
+        background-color: rgb(75, 74, 74);
+        min-height: 81vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .no-item>h1{
+        color: rgba(238, 232, 232, 0.459);
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
 
 
  

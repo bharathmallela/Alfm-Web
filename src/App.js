@@ -19,15 +19,10 @@ axios.defaults.baseURL = 'https://challengerbuildyourpc.com/api/v1/client';
 
 
 function App() {
-//   const store = createStore(rootReducer);
 
-
-  // const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart')|| '[]')
-  // console.log(cartFromLocalStorage.value,'cartlocalstrorage appjs')
 
   return (
-    // <CartContext.Provider value={{key:1,value:2}}>
-      // <Provider store={store}>  
+
         <Router>
           <ScrollToTop/>
           <Switch>
@@ -40,9 +35,7 @@ function App() {
               <Route Exact path='/' component={Home} />
           </Switch>
         </Router>
-      // </Provider>
-      
-          
+    
   );
 }
 
